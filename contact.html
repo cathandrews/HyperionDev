@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Specifies the character encoding for the HTML document -->
+    <meta charset="UTF-8" />
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The title of the webpage displayed in the browser tab -->
+    <title>Sublime Succulents</title>
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Links to Google Fonts for custom typography -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Feeling+Passionate&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Devonshire&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link to Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="propagation-body">
+    <!-- Header section containing the logo and navigation menu -->
+    <header>
+      <div class="header-content">
+        <h1 class="header-heading">
+          <!-- Site title split into two parts with a logo in between -->
+          <span class="succulents">Sublime</span>
+          <img src="images/logo1.png" alt="Logo" class="logo" />
+          <span class="sublime">Succulents</span>
+        </h1>
+      </div>
+      <!-- Navigation menu with links to different pages -->
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="succulents.html">SUCCULENT TYPES</a></li>
+          <li><a href="propagation.html">PROPAGATION</a></li>
+          <li><a href="contact.html">CONTACT ME</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Horizontal rule to separate header from the main content -->
+    <hr />
+    <!-- Main content area for the contact page -->
+    <main class="contact-page">
+      <!-- Left section containing the "Ask a Question" form -->
+      <div class="contact-left">
+        <div class="contact-form-container">
+          <!-- First form for asking a question -->
+          <h2>Ask a Question</h2>
+          <form action="#" method="post">
+            <!-- Label and input for the user's name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <!-- Label and input for the user's email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <!-- Label and input for the user's phone number -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <!-- Label and textarea for the user's message -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <!-- Label and radio buttons for the preferred contact method -->
+            <label for="contact-method">Preferred Contact Method:</label>
+            <div class="radio-group">
+              <label>
+                <input
+                  type="radio"
+                  name="contact-method"
+                  value="email"
+                  required
+                />
+                Email
+              </label>
+              <label>
+                <input type="radio" name="contact-method" value="phone" />
+                Phone
+              </label>
+              <label>
+                <input type="radio" name="contact-method" value="whatsApp" />
+                WhatsApp
+              </label>
+            </div>
+
+            <!-- Submit button for the form -->
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Middle section containing the "Contact Me" information -->
+      <div class="contact-middle">
+        <div class="profile-circle centered-image">
+          <!-- Profile image of Cath Andrews -->
+          <img src="images/Cath2a.jpg" alt="Cath Andrews" />
+        </div>
+        <!-- Heading for the contact section -->
+        <h1>Contact Me</h1>
+        <h2>Have any questions?</h2>
+        <!-- Paragraph describing the purpose of the contact page -->
+        <p>
+          Would you like answers to ALL your succulent questions, specific to
+          your succulent plants? <br /><br />Get in touch and I will do my best
+          to assist you. Alternatively, I will direct you to fellow hobbyists
+          who are experts in their field of interest. <br /><br />For those into
+          group chats, I find that questions are best answered via Zoom calls.
+          Here enthusiasts join forces and share what's most exciting in their
+          collection and offer help with those tricky succulents (ahem...
+          String of Pearls...). Make contact if you'd like to participate in
+          future.
+        </p>
+      </div>
+
+      <!-- Right section containing the "Join our Quarterly Zoom Chats" form -->
+      <div class="contact-right">
+        <div class="contact-form-container">
+          <!-- Second form for joining quarterly group chats -->
+          <h2>Join our Quarterly <br> Zoom Chats</h2>
+          <form action="#" method="post">
+            <!-- Label and input for the user's name -->
+            <label for="chat-name">Name:</label>
+            <input type="text" id="chat-name" name="chat-name" required />
+
+            <!-- Label and input for the user's email -->
+            <label for="chat-email">Email:</label>
+            <input type="email" id="chat-email" name="chat-email" required />
+
+            <!-- Heading for succulent interests -->
+            <h3>Which succulents are you interested in?</h3>
+            <div class="radio-group-succulents">
+              <!-- Radio buttons for succulent interests -->
+              <label>
+                <input type="radio" name="succulent-interest" value="succulent1" />
+                Aeonium
+              </label>
+              <label>
+                <input type="radio" name="succulent-interest" value="succulent2" />
+                Crassula
+              </label>
+              <label>
+                <input type="radio" name="succulent-interest" value="succulent3" />
+                Gasteria
+              </label>
+              <label>
+                <input type="radio" name="succulent-interest" value="succulent4" />
+                Kalanchoe
+              </label>
+              <label>
+                <input type="radio" name="succulent-interest" value="succulent5" />
+                Sempervivum
+              </label>
+              <label>
+                <input type="radio" name="succulent-interest" value="succulent6" />
+                Agave
+              </label>
+              <label>
+                <input type="radio" name="succulent-interest" value="succulent7" />
+                Echeveria
+              </label>
+              <label>
+                <input type="radio" name="succulent-interest" value="succulent8" />
+                Graptopetalum
+              </label>
+              <label>
+                <input type="radio" name="succulent-interest" value="succulent9" />
+                Mammillaria
+              </label>
+              <label>
+                <input type="radio" name="succulent-interest" value="succulent10" />
+                Lithops
+              </label>
+              <label>
+                <input type="radio" name="succulent-interest" value="succulent11" />
+                Aloe
+              </label>
+              <label>
+                <input type="radio" name="succulent-interest" value="succulent12" />
+                Euphorbia
+              </label>
+              <label>
+                <input type="radio" name="succulent-interest" value="succulent13" />
+                Haworthia
+              </label>
+              <label>
+                <input type="radio" name="succulent-interest" value="succulent14" />
+                Sedum
+              </label>
+              <label>
+                <input type="radio" name="succulent-interest" value="succulent15" />
+                Senecio
+              </label>
+              <label>
+                <input type="radio" name="succulent-interest" value="succulent16" />
+                Cotyledon
+              </label>
+            </div>
+
+            <!-- Submit button for the form -->
+            <button type="submit">Join Quarterly Chats</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- Horizontal rule to separate main content from the footer -->
+    <hr />
+    <!-- Footer section containing social media links, contact information, and copyright -->
+    <footer>
+      <div class="column column-1">
+        <!-- Social media icons with links -->
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <div class="column column-2">
+        <!-- Contact information -->
+        <p>
+          <i class="fas fa-home"></i> 6 Archbell Crescent, Howick, KZN, 3290
+        </p>
+        <p><i class="fas fa-phone"></i> 076 555 7942</p>
+        <p><i class="fas fa-envelope"></i> cathandrews47@gmail.com</p>
+      </div>
+      <div class="column column-3">
+        <!-- Copyright information -->
+        <p class="copyright">Copyright © 2025 Catherine Andrews</p>
+      </div>
+    </footer>
+  </body>
+</html>

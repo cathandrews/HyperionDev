@@ -1,0 +1,631 @@
+/* Variables */
+/* Global Styles */
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.1rem;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 2rem;
+}
+
+header {
+  background-color: #7FACAE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem 1rem;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  text-align: center;
+  flex: 1;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #523241;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+main h1 {
+  margin-bottom: 2rem;
+}
+
+main h2 {
+  margin-bottom: 2rem;
+  color: #669E2E;
+}
+
+h1 {
+  color: #618CAB;
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+  margin: 2rem 0;
+}
+
+h2 {
+  color: #669E2E;
+}
+
+h3 {
+  color: #618CAB;
+}
+
+p {
+  font-size: 1.15rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #F0F8FF;
+  box-shadow: none;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 0.5rem;
+  border: 1px solid #523241;
+  border-radius: 4px;
+}
+
+form textarea {
+  height: 10rem;
+}
+
+form button {
+  padding: 0.5rem;
+  background-color: #618CAB;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #4b728e;
+}
+
+footer {
+  background-color: #7FACAE;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer .column-3 {
+  background-color: #7FACAE;
+  box-shadow: none;
+}
+
+.column {
+  flex: 1;
+  padding: 0;
+  text-align: center;
+}
+
+.column-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.column-1 a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 3rem;
+  margin: 0 0.5rem;
+}
+
+.column-2 p {
+  margin: 0.5rem 0;
+}
+
+.column-2 i {
+  margin-right: 0.5rem;
+}
+
+.column-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  background-color: transparent;
+}
+
+.logo {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.header-heading {
+  display: flex;
+  align-items: center;
+  font-family: "Devonshire", cursive;
+  font-size: 8rem;
+  font-weight: 300;
+  color: #FFFFFF;
+  margin: 0 0 1rem;
+}
+
+.succulents {
+  margin-right: 1rem;
+}
+
+.sublime {
+  margin-left: 1rem;
+}
+
+.image-circles {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.image-circle {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+.image-circle img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile-circle {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: #ddd;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body.home-page main .home-columns {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+body.home-page main .column-3 {
+  background-color: #F0F8FF;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.home-page main .column-1-2 {
+  grid-column: span 2;
+}
+
+body.home-page main .why-grow-succulents {
+  grid-column: 2/span 2;
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+body.home-page h1 {
+  margin: 1rem 0;
+}
+
+body.home-page .about-me .profile-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.about-succulents ul.uncentered-list {
+  text-align: left;
+}
+
+.about-me .centered-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  body.home-page main .home-columns {
+    grid-template-columns: 1fr;
+  }
+  body.home-page main .column-3, body.home-page main .column-1-2, body.home-page main .why-grow-succulents {
+    grid-column: span 1;
+  }
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .image-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+  .image-item img {
+    width: 100%;
+    height: auto;
+  }
+  .contact-page {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-right, .contact-left, .contact-middle {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-form-container {
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .image-circles {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-circle {
+    width: 8rem;
+    height: 8rem;
+  }
+  .profile-circle {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+.succulent-types-heading {
+  margin-bottom: 2rem;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.image-item {
+  text-align: center;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-item:nth-child(1),
+.image-item:nth-child(3),
+.image-item:nth-child(9),
+.image-item:nth-child(11),
+.image-item:nth-child(6),
+.image-item:nth-child(8),
+.image-item:nth-child(14),
+.image-item:nth-child(16) {
+  background-color: #F0F8FF;
+}
+
+.image-item img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.image-item p {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #000000;
+}
+
+.image-item h3 {
+  color: #618CAB;
+  text-decoration: none;
+  margin-bottom: 0.2rem;
+}
+
+.image-item h3 a {
+  color: green;
+  text-decoration: none;
+}
+
+.image-item h3 a:visited {
+  color: #000000;
+}
+
+.image-item h3 a:hover,
+.image-item h3 a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.image-item table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  border: 1px solid #D3D3D3;
+}
+
+.image-item table, .image-item th, .image-item td {
+  border: 1px solid #D3D3D3;
+}
+
+.image-item th, .image-item td {
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+body.propagation-body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.1rem;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 2rem;
+}
+
+main#propagation-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+main#propagation-page h1 {
+  margin-bottom: 0.5rem;
+}
+
+main#propagation-page h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: #669E2E;
+}
+
+main#propagation-page .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+main#propagation-page .panel {
+  text-align: center;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+main#propagation-page .number {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+main#propagation-page .panel img {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+main#propagation-page .panel p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.contact-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 340px;
+}
+
+.contact-middle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+}
+
+.contact-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 340px;
+}
+
+.contact-image {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: #ddd;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form-container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #F0F8FF;
+  width: 100%;
+}
+
+.contact-form-container h2 {
+  text-align: center;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.radio-group-succulents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.testimonial {
+  background-color: #F0F8FF;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 200px;
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-right, .contact-left, .contact-middle {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-form-container {
+    max-width: 100%;
+  }
+}
+.contact-middle h1 {
+  margin-bottom: 0.5rem;
+}
+
+.contact-middle h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Specific styles for the succulents page */
+body.succulents-page .image-item h3 a {
+  color: green !important;
+  text-decoration: none;
+}
+
+body.succulents-page .image-item h3 a:visited {
+  color: #000000 !important;
+}
+
+body.succulents-page .image-item h3 a:hover,
+body.succulents-page .image-item h3 a:active {
+  color: black !important;
+  text-decoration: none;
+}
+
+/* Ensure the default color is green */
+body.succulents-page .image-item h3 a {
+  color: green !important;
+}
+
+/* Ensure the hover effect works correctly */
+body.succulents-page .image-item h3 a:hover {
+  color: black !important;
+}/*# sourceMappingURL=styles.css.map */
